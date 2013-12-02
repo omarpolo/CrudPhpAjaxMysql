@@ -1,0 +1,142 @@
+-- phpMyAdmin SQL Dump
+-- version 3.3.9
+-- http://www.phpmyadmin.net
+--
+-- Raèunalo: localhost
+-- Vrijeme generiranja: Pro 02, 2013 u 11:49 
+-- Verzija poslužitelja: 5.5.8
+-- PHP verzija: 5.3.5
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Baza podataka: `bicomtask`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tablièna struktura za tablicu `dbusers`
+--
+
+CREATE TABLE IF NOT EXISTS `dbusers` (
+  `username` varchar(16) NOT NULL DEFAULT '',
+  `password` varchar(16) NOT NULL DEFAULT '',
+  `realname` varchar(30) NOT NULL DEFAULT '',
+  `phone` varchar(15) NOT NULL DEFAULT '',
+  `address` varchar(30) NOT NULL DEFAULT '',
+  `city` varchar(15) NOT NULL DEFAULT '',
+  `zip` varchar(8) NOT NULL DEFAULT '',
+  `comment` varchar(50) NOT NULL DEFAULT ''
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Izbacivanje podataka za tablicu `dbusers`
+--
+
+INSERT INTO `dbusers` (`username`, `password`, `realname`, `phone`, `address`, `city`, `zip`, `comment`) VALUES
+('admin', 'admin', '', '', '', '', '', 'Superuser'),
+('user', 'user', '', '', '', '', '', 'User');
+
+-- --------------------------------------------------------
+
+--
+-- Tablièna struktura za tablicu `info`
+--
+
+CREATE TABLE IF NOT EXISTS `info` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `fname` varchar(100) NOT NULL,
+  `lname` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=29 ;
+
+--
+-- Izbacivanje podataka za tablicu `info`
+--
+
+INSERT INTO `info` (`id`, `fname`, `lname`, `email`, `phone`) VALUES
+(26, 'omar', 'hukic', 'omarhukic@gmail.com', '2365'),
+(27, 'omar', 'hukic', 'omarhukic@gmail.com', '2365'),
+(28, 'omar', 'hukic', 'omarhukic@gmail.com', '2365');
+
+-- --------------------------------------------------------
+
+--
+-- Tablièna struktura za tablicu `kontakti`
+--
+
+CREATE TABLE IF NOT EXISTS `kontakti` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(200) CHARACTER SET latin2 COLLATE latin2_croatian_ci NOT NULL,
+  `fullname` varchar(200) NOT NULL,
+  `email` varchar(200) CHARACTER SET latin2 COLLATE latin2_croatian_ci NOT NULL,
+  `password` varchar(200) NOT NULL,
+  `opstina` int(11) NOT NULL,
+  `aktivan` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=33 ;
+
+--
+-- Izbacivanje podataka za tablicu `kontakti`
+--
+
+INSERT INTO `kontakti` (`id`, `username`, `fullname`, `email`, `password`, `opstina`, `aktivan`) VALUES
+(1, 'omarhukic', 'omar hukic', 'omarhukic@gmail.com', 'omarpass', 1, 1),
+(2, 'mrnjau', 'mirnica hukic', 'a@b.c', 'abc', 1, 0),
+(3, 'nikolakojo', 'nikola kojot', 'nk@hotmail.com', 'nidjo21', 1, 0),
+(4, 'username', 'user nameson', 'mail', 'asdasdasd', 1, 0),
+(5, 'polo', 'polo tuzlak', 'polo@rodos.pl', '321654', 2, 0),
+(6, 'trikoder', 'petar panker', 'pan@heineken.nl', '789', 2, 0),
+(7, 'alibaba', 'ali ibn babajica', 'alibaba@hayduk.com', '777888', 3, 0),
+(10, 'monsinjor', 'vinko puljic', 'aii', 'assss', 1, 1),
+(9, 'figuli', 'figulicash', 'ret', 'ert', 3, 0),
+(32, 'kard1nal3', 'kardinal', 'kardinal@mail.net', '1234', 1, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Tablièna struktura za tablicu `opstine`
+--
+
+CREATE TABLE IF NOT EXISTS `opstine` (
+  `sifra` int(11) NOT NULL AUTO_INCREMENT,
+  `naziv` varchar(200) NOT NULL,
+  `drzava` int(11) NOT NULL,
+  PRIMARY KEY (`sifra`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Izbacivanje podataka za tablicu `opstine`
+--
+
+INSERT INTO `opstine` (`sifra`, `naziv`, `drzava`) VALUES
+(1, 'Tuzla', 1),
+(2, 'Sarajevo', 1),
+(3, 'Bijeljina', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Tablièna struktura za tablicu `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(200) NOT NULL,
+  `lastname` varchar(200) NOT NULL,
+  `username` varchar(200) NOT NULL,
+  `password` varchar(200) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Izbacivanje podataka za tablicu `users`
+--
+
+INSERT INTO `users` (`id`, `firstname`, `lastname`, `username`, `password`, `email`) VALUES
+(2, '11aaaa', '11aaaa', '11aaaa', '11aaaa', ''),
+(3, 'sad', 'sadasd', 'asd3we', '23', '');

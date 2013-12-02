@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<link rel="stylesheet" type="text/css" href="styles/style.css" />
+</head>
+
+<body onload="prikaziAddzone();">
+<script type = "text/javascript" src = "js/dragable-content.js"></script>
+<script type = "text/javascript" src = "js/jquery-1.9.1.min.js"></script> 
+<script>
+function prikaziAddzone ()
+{
+
+	$('#zona').fadeIn("fast");
+
+}
+</script>
+<div>
+<div id="zona" class="dragableElement">
+<div id='preloader'><img src='images/preloader.gif' /></div>
+</div>
+<div id="zona" class="dragableElement formBox">
+<form action="" method="post" style="background:#99FF00">
+<table><tr><td>
+<input type="text" id="SearchLS" /></td></tr>
+<tr><td>
+<input type='text' name='fullname' value='satrase' required /></td></tr>
+</form>
+</div>
+</div>
+</body>
+</html>

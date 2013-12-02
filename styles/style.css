@@ -1,0 +1,261 @@
+<style type='text/css'>         
+/*you can change you table style here*/  
+
+/*------------------------------------------------------------------------------------------------*/
+#body
+{
+	padding:500px;
+}
+.zona-site-centar {
+
+	color: black;
+	padding: 5px; 
+	border: thin solid #000;
+	width:750px;
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
+	background-color:#DFDFDF;
+	
+	   
+}
+
+.divBlock:after {
+	/* Prevent wrapper from shrinking height, 
+	see http://www.positioniseverything.net/easyclearing.html */
+	content: ".";
+	/*display: block;*/
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.zona-header {
+	/*background-color: #C2D8EF ;*/
+	background: -moz-linear-gradient(#acc6e1, #7ca0c7); 
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#acc6e1), to(#7ca0c7)); 
+	color: white;
+	padding: 5px; 
+	border: thin solid #000;
+	text-align:center;
+    box-shadow: 3px 3px 5px #888; 
+}
+.zona-body {
+	background-color:#C2D8EF ;
+	color: black;
+	padding: 5px; 
+	border: thin solid #000;
+	box-shadow: 3px 3px 5px #888; 
+}
+#zona-prikaza {
+	padding: 20px; 
+}
+#zona-kontrola {
+	margin-left:40px;
+	
+}
+.zona-footer {
+	background-color: #C2D8EF ;
+
+	color: #292D56;
+	padding: 5px; 
+	border: thin solid #000;
+    text-align:center;
+	box-shadow: 3px 3px 5px #888;
+}
+/*------------------------------------------------------------------------------------------------*/
+/* you can change page navigation here*/
+.page-nav{
+	margin: 10px 0 0 0;
+	padding: 8px;
+	text-align:center;
+	font: 12px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+.page-nav a{
+	border: none;
+	padding: 8px;
+	text-decoration: none;
+	/*background-color: #FFC;*/
+	background: -moz-linear-gradient(#acc6e1, #7ca0c7); 
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#acc6e1), to(#7ca0c7)); 
+	/*border: thin solid #FC0;*/
+	border-radius:2px;
+	border:1px solid #5b80b2;
+	color: #000;
+	box-shadow: 3px 3px 5px #888;
+}
+
+.page-nav a:hover{
+	border: thin solid #FC0;
+	background-color: #FC0;
+	color: #fff;
+}
+
+/*this is the style for selected page number*/
+.page_link{
+	padding: 8px;
+}
+
+
+.customZonaKontrola{
+	/*cursor:pointer;*/
+	margin:0 .3em 0 0;
+	/*-moz-box-shadow:inset 0px 1px 0px 0px #caefab;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #caefab;*/
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	/*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811) );
+	background:-moz-linear-gradient( center top, #77d42a 5%, #5cb811 100% );*/
+	background: -moz-linear-gradient(#acc6e1, #7ca0c7); 
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#acc6e1), to(#7ca0c7)); 
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#acc6e1', endColorstr='#7ca0c7');
+	background-color:#acc6e1;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:2px;
+	border:1px solid #5b80b2;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 10px;
+	text-decoration:none;
+
+}
+
+.customDugme {
+	cursor:pointer;
+	margin:0 .3em 0 0;
+	/*-moz-box-shadow:inset 0px 1px 0px 0px #caefab;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #caefab;*/
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	/*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811) );
+	background:-moz-linear-gradient( center top, #77d42a 5%, #5cb811 100% );*/
+	background: -moz-linear-gradient(#acc6e1, #7ca0c7); 
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#acc6e1), to(#7ca0c7)); 
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#acc6e1', endColorstr='#7ca0c7');
+	background-color:#acc6e1;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:2px;
+	border:1px solid #5b80b2;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 10px;
+	text-decoration:none;
+	/*text-shadow:1px 1px 0px #f1f1f1;*/
+}
+
+.customDugme:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #C2D8EF), color-stop(1, #003366) );
+	background:-moz-linear-gradient( center top, #C2D8EF 5%, #003366 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#C2D8EF', endColorstr=' #003366');
+	/*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a) );*/
+	/*background:-moz-linear-gradient( center top, #5cb811 5%, #77d42a 100% );*/
+	/*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a');*/
+	/*background-color:#5cb811;*/
+}
+
+.customDugme:active {
+	position:relative;
+	top:1px;
+}
+
+
+.IdRed {
+	visibility:hidden;
+	display:none;
+}
+
+.formBox{
+	background:#C2D8EF ;
+	width: 350px;
+	padding: 10px;
+	/*border: 5px solid #C5D7E2;*/
+	border-radius:2px;
+	border:1px solid #5b80b2;
+	box-shadow: 3px 3px 5px #888;
+	position: absolute;
+	top: 21%;
+	left: 47%;
+	display:none;
+	border-radius: 5px;
+	font: 12px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+.formBox input[type='text']{
+	border: 1px solid ;
+	box-shadow: 2px 2px 4px #C5D7E2 inset;
+	height: 20px;
+	width: 200px;
+}
+.formBox input[type='text']:focus{
+	border: 1px solid #C5D7E2;
+}
+
+.formBox td {
+	font: 12px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	color: #292D56;
+	text-decoration:none;
+}
+
+
+.formBox a {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#my-tbl {
+	background-color:#000000;
+	/*color: black;
+	padding: 5px;
+	width: 700px;
+	border: thin solid red;*/
+    border-collapse: collapse;
+	border-spacing: 0px;
+	width:95%;
+	box-shadow: 3px 3px 5px #888;
+	margin-left:auto;
+	margin-right:auto;
+	font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+#my-tbl th{
+	/*background-color: #000;
+	color: #FFF;
+	padding: 10px; 
+	border-bottom: thin solid #000;*/
+	 padding: 10px 10px;font-weight: bold; color:#FFFFFF; background-color: #7ca0c7; background: -moz-linear-gradient(#acc6e1, #7ca0c7); 
+	 background: -webkit-gradient(linear, 0 20%, 0 100%, from(#acc6e1), to(#7ca0c7)); border-color: #5b80b2; width:auto;  
+	 font-weight: bold; font-size: 14px; color:#FFFFFF; text-align: left;
+}
+
+.data-tr{
+	background-color: #FFF;
+	color: #000;
+	/*border-bottom: thin solid #000;*/
+}
+
+.data-tr:nth-child(2n) { background: #E8EDFF; }
+
+.data-tr:hover {
+	background-color:#BBDDFF;
+	color: black;
+	/*padding: 5px; 
+	border-bottom: thin solid #000;*/
+	   
+}
+
+.data-tr td{       
+	/*padding: 10px;            
+	margin: 0px;*/         
+}
+
+#my-tbl td{
+	padding: 1px 8px; text-align: left; border: 0px none #B9BABE; 
+
+}
+
+
+</style>
